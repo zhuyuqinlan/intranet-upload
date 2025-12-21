@@ -1,0 +1,33 @@
+/* Noto Sans SC 字体的本地替代 */
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans SC Light'), local('NotoSansSC-Light'), local('PingFang SC Light'), local('Microsoft YaHei Light');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans SC'), local('NotoSansSC-Regular'), local('PingFang SC'), local('Microsoft YaHei'), local('SimSun');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans SC Medium'), local('NotoSansSC-Medium'), local('PingFang SC Medium'), local('Microsoft YaHei');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans SC Bold'), local('NotoSansSC-Bold'), local('PingFang SC Semibold'), local('Microsoft YaHei Bold');
+}
+
+/* 降级到系统字体 */
+body {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'SimSun', sans-serif;
+}
