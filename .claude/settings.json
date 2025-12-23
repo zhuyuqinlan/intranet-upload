@@ -1,0 +1,15 @@
+{
+    "env": {
+        "ANTHROPIC_AUTH_TOKEN": "9925a932115549b5abee52e303712b3e.mKeJMWSCJDq2gloV",
+        "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+        "ANTHROPIC_MODEL": "glm-4.6",
+        "API_TIMEOUT_MS": "3000000",
+        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-4.5-air",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-4.6",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-4.6",
+        "CLAUDE_CODE_GIT_BASH_PATH": "C:\\Users\\Bowell\\AppData\\Local\\Programs\\Git\\bin\\bash.exe",
+        "HTTPS_PROXY": "http://10.10.10.125:10808",
+        "HTTP_PROXY": "http://10.10.10.125:10808"
+    }
+}

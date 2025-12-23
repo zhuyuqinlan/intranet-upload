@@ -1,34 +1,33 @@
-# Node.js dependencies
+# Node.js
 node_modules/
-# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 debug.log
+*.log
+
 # Build output
 dist/
 build/
-# Dependency directories
-jspm_packages/
-# Optional npm cache directory
-.npm
-# dotenv environment variables
+
+# 数据文件（统一放在 data 目录）
+data/
+
+# 环境变量
 .env
 .env.*
-.claude/
-# OS files
-.DS_Store
-Thumbs.db
-# Editor directories and files
-.idea/
+
+# 编辑器
 .vscode/
+.idea/
+*.sw?
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
-*.sw?
-uploads/
-file-info.json
-temp/
-package-lock.json
-CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 锁文件（可选）
+# pnpm-lock.yaml

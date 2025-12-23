@@ -1,20 +1,25 @@
 {
-  "name": "intranet-upload",
+  "name": "intranet-file-center",
   "version": "2.0.0",
-  "description": "局域网文件中心 - 支持分片上传、断点续传和文件管理",
-  "main": "server.js",
+  "description": "局域网文件中心 - Vue3 + NestJS 重构版",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter web dev\"",
+    "build": "pnpm --filter web build && pnpm --filter server build",
+    "build:server": "pnpm --filter server build",
+    "build:web": "pnpm --filter web build",
+    "start": "node server/dist/main.js",
+    "start:dev": "pnpm --filter server start:dev",
+    "lint": "eslint . --ext .ts,.vue",
+    "format": "prettier --write \"**/*.{ts,js,vue,json,md}\""
   },
-  "keywords": ["file-upload", "intranet", "chunk-upload", "file-center"],
+  "keywords": ["file-upload", "intranet", "chunk-upload", "file-center", "vue3", "nestjs"],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "multer": "^1.4.5-lts.1",
-    "uuid": "^9.0.1",
-    "cors": "^2.8.5"
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
   }
 }
